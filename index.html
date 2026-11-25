@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Rings | Jewellery Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">    
+
+    
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">Royal Rings</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarsExample07">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collections">Collections</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rings">Rings</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <form role="search" onsubmit="searchRings(event)">
+                    <input id="searchInput" class="form-control"
+                        type="search" placeholder="Search rings...">
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <div class="container col-xxl-8 px-4 py-5">
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+            <div class="col-10 col-sm-8 col-lg-6">
+
+                <img src="https://storage.pixteller.com/designs/designs-images/2020-12-21/05/diamond-ring-jewelry-sale-banner-1-5fe0c46300bcf.png"
+                    class="d-block mx-lg-auto img-fluid hero-img"
+                    alt="Beautiful diamond ring" width="700" height="500">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h1 class="display-5 fw-bold hero-title lh-1 mb-3">
+                    Discover Your Perfect Ring
+                </h1>
+
+                <p class="lead">
+                    Celebrate your special moments with our exclusive
+                    collection of beautiful rings. Discover elegant gold
+                    rings, sparkling diamond rings and stunning engagement
+                    rings designed to make every moment memorable.
+                </p>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+
+                    <a href="#rings" class="btn btn-primary btn-lg px-4">
+                        Shop Now
+                    </a>
+
+                    <a href="#collections"
+                        class="btn btn-outline-secondary btn-lg px-4">
+                        Explore Collection
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- COLLECTION CARDS -->
+    <div class="container px-4 py-5" id="collections">
+
+        <h2 class="pb-2 border-bottom">Our Collections</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+            <div class="col">
+
+                <div class="card custom-card overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://t4.ftcdn.net/jpg/12/37/98/47/360_F_1237984797_V3VJAbon9h767a63oTjTlJtiSSxyJV3V.jpg');">
+
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+
+                        <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">
+                            Diamond Rings
+                        </h3>
+
+                        <small>Elegant diamonds for your special moments</small>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+
+                <div class="card custom-card overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://assets.myntassets.com/assets/images/2026/AUGUST/15/190d263299d644efb18fb375c416eb9a.jpg');">
+
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+
+                        <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">
+                            Gold Rings
+                        </h3>
+
+                        <small>Timeless beauty and traditional elegance</small>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+
+                <div class="card custom-card overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://rukminim3.flixcart.com/image/480/580/xif0q/ring/h/1/2/adjustable-2-rng-275-cpl-ring-set-lithisa-original-imahzg4zujz94raz.jpeg?q=80');">
+
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+
+                        <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">
+                            Engagement Rings
+                        </h3>
+
+                        <small>Make your love story unforgettable</small>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- RING PRODUCTS -->
+    <main class="container" id="rings">
+
+        <h2 class="text-center mb-5">Our Best Selling Rings</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="col">
+
+                <div class="card mb-4 rounded-3 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e"
+                        class="product-img card-img-top"
+                        alt="Diamond ring">
+
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Diamond Ring</h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h1 class="card-title pricing-card-title">
+                            ₹25,999
+                        </h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Premium diamond design</li>
+                            <li>Elegant finishing</li>
+                            <li>Perfect for special occasions</li>
+                            <li>Gift packaging available</li>
+                        </ul>
+
+                        <button class="w-100 btn btn-lg btn-outline-primary"
+                            onclick="buyRing('Diamond Ring', '₹25,999')">
+                            Buy Now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="col">
+
+                <div class="card mb-4 rounded-3 shadow-sm h-100">
+
+                    <img src="https://rukminim3.flixcart.com/image/480/580/xif0q/ring/g/i/b/free-size-1-1-pcs-kardo-2-gold-ring-for-women-ring-bhavu-original-imahhh5azcrucmqf.jpeg?q=90"
+                        class="product-img card-img-top"
+                        alt="Gold ring">
+
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Gold Ring</h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h1 class="card-title pricing-card-title">
+                            ₹18,499
+                        </h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Beautiful gold finish</li>
+                            <li>Classic design</li>
+                            <li>Comfortable to wear</li>
+                            <li>Perfect for daily use</li>
+                        </ul>
+
+                        <button class="w-100 btn btn-lg btn-primary"
+                            onclick="buyRing('Gold Ring', '₹18,499')">
+                            Buy Now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="col">
+
+                <div class="card mb-4 rounded-3 shadow-sm h-100">
+
+                    <img src="https://cdn.augrav.com/online/jewels/2026/07/25111928/unique-textured-gold-band-ring-with-organic-crackle-pattern-on-prop-330x330.png"
+                        class="product-img card-img-top"
+                        alt="Engagement ring">
+
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Engagement Ring</h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <h1 class="card-title pricing-card-title">
+                            ₹32,999
+                        </h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Premium engagement design</li>
+                            <li>Beautiful sparkling finish</li>
+                            <li>Elegant appearance</li>
+                            <li>Special gift packaging</li>
+                        </ul>
+
+                        <button class="w-100 btn btn-lg btn-primary"
+                            onclick="buyRing('Engagement Ring', '₹32,999')">
+                            Buy Now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid mt-5" id="contact">
+
+        <footer class="py-5 px-4">
+
+            <div class="row">
+
+                <div class="col-6 col-md-2 mb-3">
+
+                    <h5>Quick Links</h5>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0">Home</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#collections" class="nav-link p-0">Collections</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#rings" class="nav-link p-0">Rings</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-6 col-md-2 mb-3">
+
+                    <h5>Categories</h5>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#rings" class="nav-link p-0">Gold Rings</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#rings" class="nav-link p-0">Diamond Rings</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#rings" class="nav-link p-0">Engagement Rings</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-6 col-md-2 mb-3">
+
+                    <h5>Customer Support</h5>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#contact" class="nav-link p-0">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#contact" class="nav-link p-0">Shipping</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a href="#contact" class="nav-link p-0">Returns</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-5 offset-md-1 mb-3">
+
+                    <form onsubmit="subscribe(event)">
+
+                        <h5>Subscribe to our newsletter</h5>
+
+                        <p>Get updates about new ring collections and offers.</p>
+
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+
+                            <input id="newsletter1" type="email"
+                                class="form-control"
+                                placeholder="Email address" required>
+
+                            <button class="btn btn-primary" type="submit">
+                                Subscribe
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+                <p>© 2026 Royal Rings. All rights reserved.</p>
+
+                <p>Designed with Love ❤️</p>
+
+            </div>
+
+        </footer>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function buyRing(name, price) {
+
+            let message = "Hello, I am interested in purchasing " +
+                name + " priced at " + price;
+
+            alert(message);
+
+            // Replace with your WhatsApp business number
+            let phone = "91XXXXXXXXXX";
+
+            let url = "https://wa.me/" + phone +
+                "?text=" + encodeURIComponent(message);
+
+            window.open(url, "_blank");
+
+        }
+
+
+        function searchRings(event) {
+
+            event.preventDefault();
+
+            let search = document.getElementById("searchInput")
+                .value.toLowerCase();
+
+            let products = document.querySelectorAll("#rings .col");
+
+            let found = false;
+
+            products.forEach(function(product) {
+
+                let name = product.innerText.toLowerCase();
+
+                if (name.includes(search)) {
+                    product.style.display = "";
+                    found = true;
+                } else {
+                    product.style.display = "none";
+                }
+
+            });
+
+            if (!found) {
+                alert("No matching rings found!");
+            }
+
+            document.getElementById("rings").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+        function subscribe(event) {
+
+            event.preventDefault();
+
+            alert("Thank you for subscribing to Royal Rings!");
+
+            document.getElementById("newsletter1").value = "";
+
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

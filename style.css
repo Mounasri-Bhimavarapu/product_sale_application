@@ -1,0 +1,69 @@
+
+:root {
+    --bg-color: #fffaf5;
+    --primary-color: #8b5e3c;
+    --secondary-color: #e6c17a;
+    --accent-color: #654321;
+    --card-header-bg: #f3e3d0;
+    --footer-bg: #211a17;
+    --footer-text: #ffffff;
+    --footer-link: #d8c2ad;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary-color) !important;
+}
+
+.hero-img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.hero-title {
+    color: var(--primary-color);
+}
+
+.custom-card {
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+}
+
+.product-img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: var(--card-header-bg);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+footer a {
+    color: var(--footer-link) !important;
+}
